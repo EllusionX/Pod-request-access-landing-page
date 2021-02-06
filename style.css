@@ -18,7 +18,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
     color: #f0f2f2;
-    background: #1e2120;
+    background: #000;
 }
 
 
@@ -55,7 +55,7 @@ header span {
 }
 
 .container .text h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 300;
     text-align: center;
     max-width: 100%;
