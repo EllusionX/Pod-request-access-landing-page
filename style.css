@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    color: #f0f2f2;
+    background: #1e2120;
+}
+
+
+header {
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+header svg {
+    max-width: 15%;
+    padding: 0.5rem;
+    background-color: #4ee9b8;
+    border-radius: 100%;
+    color: #212121;
+}
+
+header span {
+    margin-left: 0.5rem;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    z-index: 2;
+}
+
+.container .text h1 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+    max-width: 100%;
+    text-transform: uppercase;
+    line-height: 2rem;
+    
+}
+
+.container .text h1 span {
+    color: #4ee9b8;
+}
+
+.container .text p {
+    max-width: 450px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 1.3rem;
+    line-height: 1.5rem;
+}
+
+
+.form {
+    width: 100%;
+    min-width: 250px;
+    max-width: 450px;
+    order: 3;
+    margin: 1.2rem 0;
+}
+
+.form form input {
+    width: 100%;
+    outline: none;
+    padding: 0.7rem 2rem;
+    border-radius: 20px;
+    background: #2c354d;
+    outline: none;
+    border: 1px solid #2c354d;
+    color: #f0f2f2;
+    font-size: 0.8rem;
+}
+
+.form form input::placeholder {
+    color: #f0f2f2;
+    opacity: 50%;
+}
+
+.form form button {
+    width: 100%;
+    margin-top: 0.8rem;
+    outline: none;
+    padding: 0.7rem 2rem;
+    border-radius: 20px;
+    background: #4ee9b8;
+    outline: none;
+    border: 1px solid #4ee9b8;
+    color: #202225;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.podcasts-icons {
+    max-width: 450px;
+    order: 2;
+}
+
+.podcasts-icons ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.podcasts-icons ul li {
+    display: flex;
+    align-items: center;
+    margin: 1.2rem 0.8rem;
+    font-size: 0.5rem;
+    color: #657285;
+}
+
+.podcasts-icons ul li span.fa {
+     font-size: 1.2rem;
+}
+
+.podcasts-icons ul li span.social-brand {
+    margin-left: 0.2rem;
+}
+
+.image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(img/microphone.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 20%;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 375px) {
+    body {
+        padding: 3rem 1.2rem;
+    }
+
+    header span {
+        font-size: 1.8rem;
+    }
+
+    .container .text h1 {
+        font-size: 1.6rem;
+    }
+    
+    .container .text p {
+        font-size: 1rem;
+    }
+
+    .podcasts-icons ul li {
+        font-size: 0.7rem;
+    }
+
+    .podcasts-icons ul li span.fa {
+        font-size: 1.3rem;
+   }
+}
+
+@media only screen and (min-width: 414px) {
+
+    body {
+        padding: 4rem 1.2rem;
+    }
+
+    header svg {
+        width: 55px;
+    }
+
+    header span {
+        font-size: 2.1rem;
+    }
+
+    .container .text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .container .text p {
+        font-size: 1.2rem;
+    }
+
+    .podcasts-icons ul li {
+        font-size: 0.9rem;
+    }
+   
+}
+
+@media only screen and (min-width: 768px) {
+    * {
+        overflow-x: hidden;
+    }
+    body {
+        padding: 2.5rem;
+        background-color: #000;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    header svg {
+        width: 65px;
+    }
+
+    header span {
+        font-size: 2.7rem;
+    }
+
+    main {
+        margin-top: 4rem;
+    }
+
+    .container {
+        width: 85%;
+        align-items: flex-start;
+        background-color: #000;
+        padding: 5rem 0 0 0;
+        border-radius: 10px;
+    }
+
+    .container .text h1 {
+        font-size: 2.6rem;
+        text-align: left;
+        line-height: 4rem;
+        
+    }
+    
+    .container .text h1 span {
+        color: #4ee9b8;
+    }
+    
+    .container .text p {
+        text-align: left;
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+    }
+
+    .podcasts-icons {
+        max-width: 100%;
+        order: 3;
+    }
+
+    .podcasts-icons ul li {
+        margin-left: 0;
+    }
+
+    .podcasts-icons ul li .social-brand {
+        font-size: 0.9rem;
+    }
+
+    .podcasts-icons ul li span.fa {
+        font-size: 2rem;
+   }
+
+   .form {
+        position: relative;
+        order: 2;
+    }
+
+    .form form input {
+        margin: 1.2rem 0;
+        padding: 1.2rem 11rem 1.2rem 2rem;
+        font-size: 1rem;
+        border-radius: 2rem;
+    }
+
+    .form form button {
+        position: absolute;
+        right: 0;
+        top: 25%;
+        width: 35%;
+        margin: 0 0.3rem 0 0;
+        padding: 0.9rem 0.5rem;
+        border-radius: 2rem;
+        font-size: 1rem;
+    }
+    
+    .image-container {
+        position: absolute;
+        width: 70%;
+        left: 40%;
+        opacity: 50%;
+        background-position: top;
+    } 
+    
+}
+
+@media only screen and (min-width: 812px){
+    body {
+        padding: 4rem 6rem;
+    }
+
+    main {
+        margin-top: 2rem;
+    }
+
+    .container {
+        max-width: 650px;
+        margin-top: 2rem;
+    }
+
+    .form form button {
+        top: 24%;
+    }
+
+    .image-container {
+        opacity: 100%;
+    }
+}
+
