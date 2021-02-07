@@ -21,7 +21,6 @@ body {
     background: #000;
 }
 
-
 header {
     width: 100%;
     margin: 1rem auto;
@@ -61,7 +60,6 @@ header span {
     max-width: 100%;
     text-transform: uppercase;
     line-height: 2rem;
-    
 }
 
 .container .text h1 span {
@@ -75,7 +73,6 @@ header span {
     margin-top: 1.3rem;
     line-height: 1.5rem;
 }
-
 
 .form {
     width: 100%;
@@ -118,8 +115,6 @@ header span {
     color: #f0f2f2;
     font-size: 0.8rem;
 }
-
-
 
 .form form input::placeholder {
     color: #f0f2f2;
@@ -273,7 +268,6 @@ header span {
         font-size: 2.6rem;
         text-align: left;
         line-height: 4rem;
-        
     }
     
     .container .text h1 span {
@@ -301,7 +295,7 @@ header span {
 
     .podcasts-icons ul li span.fa {
         font-size: 2rem;
-   }
+    }
 
    .form {
         position: relative;
@@ -336,7 +330,6 @@ header span {
         opacity: 50%;
         background-position: top;
     } 
-    
 }
 
 @media only screen and (min-width: 812px){
