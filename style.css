@@ -50,7 +50,7 @@ header span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4em;
+    margin-top: 3em;
     z-index: 2;
 }
 
@@ -85,6 +85,28 @@ header span {
     margin: 1.2rem 0;
 }
 
+.form .error-message.error{
+    display: flex;
+}
+
+.form .error-message {
+    margin-bottom: 0.3rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #4ee9b8;
+}
+
+.form .error-message p{
+    font-size: 0.8rem;
+    text-align: center;
+    margin-right: 0.3rem;
+}
+
+.form .error-message svg {
+    width: 20px;
+}
+
 .form form input {
     width: 100%;
     outline: none;
@@ -96,6 +118,8 @@ header span {
     color: #f0f2f2;
     font-size: 0.8rem;
 }
+
+
 
 .form form input::placeholder {
     color: #f0f2f2;
@@ -234,7 +258,7 @@ header span {
     }
 
     main {
-        margin-top: 4rem;
+        margin-top: 3.5rem;
     }
 
     .container {
@@ -285,7 +309,6 @@ header span {
     }
 
     .form form input {
-        margin: 1.2rem 0;
         padding: 1.2rem 11rem 1.2rem 2rem;
         font-size: 1rem;
         border-radius: 2rem;
@@ -294,12 +317,16 @@ header span {
     .form form button {
         position: absolute;
         right: 0;
-        top: 25%;
+        top: 8%;
         width: 35%;
         margin: 0 0.3rem 0 0;
-        padding: 0.9rem 0.5rem;
+        padding: 0.95rem 0.5rem;
         border-radius: 2rem;
         font-size: 1rem;
+    }
+
+    .form form button.error-adjust {
+        top: 34.5%;
     }
     
     .image-container {
@@ -315,6 +342,8 @@ header span {
 @media only screen and (min-width: 812px){
     body {
         padding: 4rem 6rem;
+        max-width: 1920px;
+        margin: 0 auto;
     }
 
     main {
@@ -327,7 +356,12 @@ header span {
     }
 
     .form form button {
-        top: 24%;
+        top: 7%;
+        right: -0.1%;
+    }
+
+    .form form button.error-adjust {
+        top: 34.5%;
     }
 
     .image-container {
