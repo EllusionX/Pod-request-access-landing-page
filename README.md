@@ -1,4 +1,4 @@
-# landing-page
+# Pod-request-access-landing-page
 This project is created based on one of the challenges by Frontend Mentor - "Pod request access landing page". 
 Everything here are coded based on the design reference provided by Frontend Mentor and without downloading the starter code.
 Hence, the project does not look exactly the same. 
